@@ -1,37 +1,80 @@
-# ResuBoost-AI Resume Scanner
-Live Demo: https://resuboostai.onrender.com
+# ResuBoost AI – Resume Scanner
 
-ResuBoost is an AI-powered resume analyzer that scores resumes, identifies missing skills, and provides suggestions & action plan for improvement. Built using Flask, Python, and JavaScript, it’s a fullstack project demonstrating real-world AI integration.
+**Live Demo:** [Try ResuBoost AI](https://resuboostai.onrender.com)
 
-# Features:
--Scores your resume based on the job description.
--Highlights the key skills and missing skills.
--Suggestions for resume score improvement.
--Get a guide to learn missing skills.
--Responsive for all devices.
+ResuBoost AI is an AI-powered resume analyzer that evaluates resumes against job descriptions, identifies relevant and missing skills, and provides actionable suggestions to improve resume alignment with target roles.
 
-# Tech Stack:
--**Backend:** Python, Flask
--**Frontend:** HTML, CSS, JavaScript
--**AI/ML:** SpaCy, scikit-learn, PDF processing libraries
--**Deployment:** Render
+## Application Preview
 
-# How to run locally?
-1.Clone the repository or use this command in terminal.
-```git clone https://github.com/keerthi-siddigari/AI_ResumeScanner.git```
+![ResuBoost AI Application](screenshots/homepage.png)
 
-2.Navigate to the project file.
-```cd AI_ResumeScanner```
+## Features
 
-3.Create a virtual environment and activate it:
+- **Resume Scoring:** Evaluate a resume against a given job description.
+- **Skill Extraction:** Identify relevant skills mentioned in the resume.
+- **Missing Skill Detection:** Highlight skills and keywords missing in relation to the job description.
+- **Improvement Suggestions:** Provide recommendations to improve resume alignment.
+- **Learning Guidance:** Suggest areas and skills to focus on for career development.
+- **Responsive Interface:** Designed to work across different screen sizes.
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Backend | Python, Flask |
+| Frontend | HTML, CSS, JavaScript |
+| NLP | spaCy |
+| Text Similarity | Scikit-learn, TF-IDF |
+| PDF Processing | PDFPlumber |
+| Deployment | Render |
+
+## Running Locally
+
+### Prerequisites
+
+- Python
+- pip
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/keerthi-siddigari/AI_ResumeScanner.git
+cd AI_ResumeScanner
+```
+
+### 2. Create and activate a virtual environment
+
+```bash
 python -m venv venv
--for Windows
-```venv\Scripts\activate```
--for macOS/Linux
-```source venv/bin/activate```
+```
 
-4.Install dependencies 
-```pip install -r requirements.txt```
+**Windows**
+```bash
+venv\Scripts\activate
+```
 
-5.Run the app
-```python app.py```
+**macOS/Linux**
+```bash
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the application
+
+```bash
+python app.py
+```
+
+Open the local URL displayed by Flask in your terminal.
+
+## Project Highlights
+
+- Built a full-stack resume analysis application using Flask and JavaScript.
+- Applied NLP techniques to extract and process resume information.
+- Used TF-IDF similarity to compare resumes against job descriptions.
+- Generated skill-gap insights and actionable improvement suggestions.
