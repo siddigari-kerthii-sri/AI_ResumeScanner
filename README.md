@@ -6,7 +6,7 @@ ResuBoost AI is an AI-powered resume analyzer that evaluates resumes against job
 
 ## Application Preview
 
-![ResuBoost AI Application](screenshots/homepage.png)
+![ResuBoost AI Application](ai-resume.PNG)
 
 ## Features
 
